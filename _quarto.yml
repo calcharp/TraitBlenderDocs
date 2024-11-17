@@ -7,7 +7,7 @@ website:
     style: floating
     contents:
       - text: About
-        href: Sections/index.qmd
+        href: index.qmd
       - text: Getting Started
         href: Sections/getting-started.qmd
       - text: TraitBlender GUI
@@ -34,5 +34,5 @@ website:
 format:
   html:
     theme: cosmo
-    css: styles.css
+    css: assets/css/styles.css
     toc: false 
