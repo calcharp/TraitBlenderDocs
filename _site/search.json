@@ -1,0 +1,9 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "TraitBlender",
+    "section": "",
+    "text": "Welcome to TraitBlender\n\n\nTraitBlender is an open-source pipeline for simulating image datasets of synthetic organisms from described morphospaces. It is implemented as an addon to Blender, an open-source 3D modeling suite used for artistic and scientific purposes."
+  }
+]

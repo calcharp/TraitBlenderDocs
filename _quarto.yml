@@ -1,0 +1,38 @@
+project:
+  type: website
+
+website:
+  title: "TraitBlender"
+  sidebar:
+    style: floating
+    contents:
+      - text: About
+        href: Sections/index.qmd
+      - text: Getting Started
+        href: Sections/getting-started.qmd
+      - text: TraitBlender GUI
+        href: Sections/traitblender-gui.qmd
+      - text: Python API
+        href: Sections/traitblender-api.qmd
+      - text: Docker and Singularity
+        href: Sections/docker-singularity.qmd
+      - text: Examples
+        contents:
+          - text: Square
+            href: Examples/square.qmd
+          - text: Suzanne
+            href: Examples/suzanne.qmd
+          - text: Raup
+            href: Examples/raup.qmd
+          - text: General Shell
+            href: Examples/general_shell.qmd
+          - text: Arabidopsis
+            href: Examples/arapidopsis.qmd
+
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false 
