@@ -11,6 +11,83 @@
     "href": "Sections/getting-started.html",
     "title": "Getting Started",
     "section": "",
-    "text": "Getting Started\nTraitBlender is implemented as an addon to the 3D modeling software Blender, which can be installed here. Once Blender is installed, the TraitBlender addon can be installed via the zip file available in the Imageomics Repository.\nTo install TraitBlender via the Blender GUI, open Blender, and navigate to Edit -> Preferences..., located in the top left corner of the screen. Once in the Preferences menu, click Add-ons -> Install..., and find the TraitBlender.zip file you downloaded. Click Install Add-on, and navigate to the Testing tab in the Add-ons menu. Click the check box to the left of User Interface: TraitBlender. TraitBlender is now installed and enabled.\nTo install TraitBlender via command line, you must create an intermediate Python file with this text:\n```{python}\n# import bpy\n# bpy.ops.preferences.addon_install(filepath=\"{absolute path to your zip file}}\")\n```\nThen, in the terminal, run:\n```{bash}\nblender --background --python {your file name}.py\n```"
+    "text": "Getting Started\nTraitBlender is implemented as an addon to the 3D modeling software Blender, which can be installed here. Once Blender is installed, the TraitBlender addon can be installed via the zip file available in the Imageomics Repository.\nTo install TraitBlender via the Blender GUI, open Blender, and navigate to Edit -> Preferences..., located in the top left corner of the screen. Once in the Preferences menu, click Add-ons -> Install..., and find the TraitBlender.zip file you downloaded. Click Install Add-on, and navigate to the Testing tab in the Add-ons menu. Click the check box to the left of User Interface: TraitBlender. TraitBlender is now installed and enabled.\nTo install TraitBlender via command line, you must create an intermediate Python file with this text:\n```{python}\nimport bpy\nbpy.ops.preferences.addon_install(filepath=\"{absolute path to your zip file}}\")\n```\nThen, in the terminal, run:\n```{bash}\nblender --background --python {your file name}.py\n```"
+  },
+  {
+    "objectID": "Sections/traitblender-api.html#generating-organisms-from-morphospaces",
+    "href": "Sections/traitblender-api.html#generating-organisms-from-morphospaces",
+    "title": "Python API",
+    "section": "Generating Organisms from Morphospaces",
+    "text": "Generating Organisms from Morphospaces\nImportMakeMeshFunctionPathOperator(bpy.types.Operator) ExecuteStoredFunctionOperator(bpy.types.Operator) OpenMeshFunctionFileBrowserOperator(bpy.types.Operator)"
+  },
+  {
+    "objectID": "Sections/traitblender-api.html#importing-trait-data",
+    "href": "Sections/traitblender-api.html#importing-trait-data",
+    "title": "Python API",
+    "section": "Importing Trait Data",
+    "text": "Importing Trait Data\nget_csv_labels(self, context) CSVLabelProperties(bpy.types.PropertyGroup) ExecuteWithSelectedCSVRowOperator(bpy.types.Operator) ImportCSVOperator(bpy.types.Operator)"
+  },
+  {
+    "objectID": "Sections/traitblender-api.html#world-color-and-background-images",
+    "href": "Sections/traitblender-api.html#world-color-and-background-images",
+    "title": "Python API",
+    "section": "World Color and Background Images",
+    "text": "World Color and Background Images\nWorldBackgroundControls(bpy.types.PropertyGroup) ChangeWorldBackgroundColor(bpy.types.Operator) mesh_menu_func(self, context) update_background_plane_distance(self, context) BackgroundControls(bpy.types.PropertyGroup) CallUpdateBackgroundPlaneDistanceOperator(bpy.types.Operator) CreateBackgroundImageMeshOperator(bpy.types.Operator) HideBackgroundPlanesOperator(bpy.types.Operator) ImportBackgroundImageOperator(bpy.types.Operator) ScaleBackgroundPlanesOperator(bpy.types.Operator) ToggleBackgroundPlanesOperator(bpy.types.Operator)"
+  },
+  {
+    "objectID": "Sections/traitblender-api.html#control-lighting-via-suns",
+    "href": "Sections/traitblender-api.html#control-lighting-via-suns",
+    "title": "Python API",
+    "section": "Control Lighting via Suns",
+    "text": "Control Lighting via Suns\nSunControls(bpy.types.PropertyGroup) HideSunsOperator(bpy.types.Operator) ToggleSunsOperator(bpy.types.Operator) UpdateSunStrengthOperator(bpy.types.Operator) SunControlsPanel(bpy.types.Panel)"
+  },
+  {
+    "objectID": "Sections/traitblender-api.html#rendering-images",
+    "href": "Sections/traitblender-api.html#rendering-images",
+    "title": "Python API",
+    "section": "Rendering Images",
+    "text": "Rendering Images\nCameraControls(bpy.types.PropertyGroup) delete_cameras_on_mesh_deletion(dummy) update_camera_aspect_ratio(self, context) update_camera_distance(self, context) update_camera_focal_length(self, context) HideCamerasOperator(bpy.types.Operator) RenderAllCamerasOperator(bpy.types.Operator) SelectRenderDirectoryOperator(bpy.types.Operator) SetCameraViewOperator(bpy.types.Operator) ToggleCamerasOperator(bpy.types.Operator) RenderHiddenObjectsOperator(bpy.types.Operator) update_render_hidden_objects(self, context)"
+  },
+  {
+    "objectID": "Sections/traitblender-api.html#adding-random-noise-to-scenes",
+    "href": "Sections/traitblender-api.html#adding-random-noise-to-scenes",
+    "title": "Python API",
+    "section": "Adding Random Noise to Scenes",
+    "text": "Adding Random Noise to Scenes\nRandomCamerasRotationOperator(bpy.types.Operator) RandomCamerasDistanceOperator(bpy.types.Operator) RandomWorldBackgroundColor(bpy.types.Operator) RandomSunsHideOperator(bpy.types.Operator) RandomSunStrengthOperator(bpy.types.Operator) RandomizationControls(bpy.types.PropertyGroup)"
+  },
+  {
+    "objectID": "Sections/traitblender-api.html#exporting-3d-objects",
+    "href": "Sections/traitblender-api.html#exporting-3d-objects",
+    "title": "Python API",
+    "section": "Exporting 3D Objects",
+    "text": "Exporting 3D Objects\nExportControlsPropertyGroup(bpy.types.PropertyGroup) ExportActiveObjectOperator(bpy.types.Operator)"
+  },
+  {
+    "objectID": "Sections/traitblender-api.html#segmenting-models",
+    "href": "Sections/traitblender-api.html#segmenting-models",
+    "title": "Python API",
+    "section": "Segmenting Models",
+    "text": "Segmenting Models\nSegmentationControlsProperty(bpy.types.PropertyGroup) LoadVertexGroupsFromCSVOperator(bpy.types.Operator) SaveVertexGroupsToCSVOperator(bpy.types.Operator) SegmentationControls(bpy.types.Panel)"
+  },
+  {
+    "objectID": "Sections/traitblender-api.html#gui-api",
+    "href": "Sections/traitblender-api.html#gui-api",
+    "title": "Python API",
+    "section": "GUI API",
+    "text": "GUI API\nTraitBlenderPanel(bpy.types.Panel)"
+  },
+  {
+    "objectID": "Sections/traitblender-api.html#extra-tools",
+    "href": "Sections/traitblender-api.html#extra-tools",
+    "title": "Python API",
+    "section": "Extra Tools",
+    "text": "Extra Tools\nExportSettingsOperator(bpy.types.Operator) DeleteAllObjectsOperator(bpy.types.Operator)"
+  },
+  {
+    "objectID": "Sections/traitblender-gui.html",
+    "href": "Sections/traitblender-gui.html",
+    "title": "TraitBlender GUI",
+    "section": "",
+    "text": "The opening screen for Blender\n\n\n\n\n\nThe Blender screen with the TraitBlender panel toggeled open\n\n\n\n\n\nA close up of the TraitBlender panel"
   }
 ]

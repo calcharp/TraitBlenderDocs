@@ -1,0 +1,11 @@
+---
+title: "TraitBlender GUI"
+page-layout: full
+---
+
+![](../images/opening_blender_scene.jpg)
+
+![](../images/traitblender_panel_opened.png)
+
+![](../images/traitblender_panel.png)
+

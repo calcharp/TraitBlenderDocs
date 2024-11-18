@@ -21,8 +21,8 @@ TraitBlender is now installed and enabled.
 To install TraitBlender via command line, you must create an intermediate Python file with this text:
 
 ```{{python}}
-# import bpy
-# bpy.ops.preferences.addon_install(filepath="{absolute path to your zip file}}")
+import bpy
+bpy.ops.preferences.addon_install(filepath="{absolute path to your zip file}}")
 ```
 
 Then, in the terminal, run:

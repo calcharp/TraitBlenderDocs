@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>TraitBlender – traitblender-api</title>
+<title>TraitBlender - Python API</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -60,16 +60,16 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
-<body class="nav-sidebar floating fullcontent">
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">TraitBlender</h1>
+      <h1 class="quarto-secondary-nav-title">Python API</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -77,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
@@ -158,12 +158,73 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Python API</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="overview" class="level1">
+<h1>Overview</h1>
+</section>
+<section id="sections" class="level1">
+<h1>Sections</h1>
+<section id="generating-organisms-from-morphospaces" class="level2">
+<h2 class="anchored" data-anchor-id="generating-organisms-from-morphospaces">Generating Organisms from Morphospaces</h2>
+<p><code>ImportMakeMeshFunctionPathOperator(bpy.types.Operator)</code> <code>ExecuteStoredFunctionOperator(bpy.types.Operator)</code> <code>OpenMeshFunctionFileBrowserOperator(bpy.types.Operator)</code></p>
+</section>
+<section id="importing-trait-data" class="level2">
+<h2 class="anchored" data-anchor-id="importing-trait-data">Importing Trait Data</h2>
+<p><code>get_csv_labels(self, context)</code> <code>CSVLabelProperties(bpy.types.PropertyGroup)</code> <code>ExecuteWithSelectedCSVRowOperator(bpy.types.Operator)</code> <code>ImportCSVOperator(bpy.types.Operator)</code></p>
+</section>
+<section id="world-color-and-background-images" class="level2">
+<h2 class="anchored" data-anchor-id="world-color-and-background-images">World Color and Background Images</h2>
+<p><code>WorldBackgroundControls(bpy.types.PropertyGroup)</code> <code>ChangeWorldBackgroundColor(bpy.types.Operator)</code> <code>mesh_menu_func(self, context)</code> <code>update_background_plane_distance(self, context)</code> <code>BackgroundControls(bpy.types.PropertyGroup)</code> <code>CallUpdateBackgroundPlaneDistanceOperator(bpy.types.Operator)</code> <code>CreateBackgroundImageMeshOperator(bpy.types.Operator)</code> <code>HideBackgroundPlanesOperator(bpy.types.Operator)</code> <code>ImportBackgroundImageOperator(bpy.types.Operator)</code> <code>ScaleBackgroundPlanesOperator(bpy.types.Operator)</code> <code>ToggleBackgroundPlanesOperator(bpy.types.Operator)</code></p>
+</section>
+<section id="control-lighting-via-suns" class="level2">
+<h2 class="anchored" data-anchor-id="control-lighting-via-suns">Control Lighting via Suns</h2>
+<p><code>SunControls(bpy.types.PropertyGroup)</code> <code>HideSunsOperator(bpy.types.Operator)</code> <code>ToggleSunsOperator(bpy.types.Operator)</code> <code>UpdateSunStrengthOperator(bpy.types.Operator)</code> <code>SunControlsPanel(bpy.types.Panel)</code></p>
+</section>
+<section id="rendering-images" class="level2">
+<h2 class="anchored" data-anchor-id="rendering-images">Rendering Images</h2>
+<p><code>CameraControls(bpy.types.PropertyGroup)</code> <code>delete_cameras_on_mesh_deletion(dummy)</code> <code>update_camera_aspect_ratio(self, context)</code> <code>update_camera_distance(self, context)</code> <code>update_camera_focal_length(self, context)</code> <code>HideCamerasOperator(bpy.types.Operator)</code> <code>RenderAllCamerasOperator(bpy.types.Operator)</code> <code>SelectRenderDirectoryOperator(bpy.types.Operator)</code> <code>SetCameraViewOperator(bpy.types.Operator)</code> <code>ToggleCamerasOperator(bpy.types.Operator)</code> <code>RenderHiddenObjectsOperator(bpy.types.Operator)</code> <code>update_render_hidden_objects(self, context)</code></p>
+</section>
+<section id="adding-random-noise-to-scenes" class="level2">
+<h2 class="anchored" data-anchor-id="adding-random-noise-to-scenes">Adding Random Noise to Scenes</h2>
+<p><code>RandomCamerasRotationOperator(bpy.types.Operator)</code> <code>RandomCamerasDistanceOperator(bpy.types.Operator)</code> <code>RandomWorldBackgroundColor(bpy.types.Operator)</code> <code>RandomSunsHideOperator(bpy.types.Operator)</code> <code>RandomSunStrengthOperator(bpy.types.Operator)</code> <code>RandomizationControls(bpy.types.PropertyGroup)</code></p>
+</section>
+<section id="exporting-3d-objects" class="level2">
+<h2 class="anchored" data-anchor-id="exporting-3d-objects">Exporting 3D Objects</h2>
+<p><code>ExportControlsPropertyGroup(bpy.types.PropertyGroup)</code> <code>ExportActiveObjectOperator(bpy.types.Operator)</code></p>
+</section>
+<section id="segmenting-models" class="level2">
+<h2 class="anchored" data-anchor-id="segmenting-models">Segmenting Models</h2>
+<p><code>SegmentationControlsProperty(bpy.types.PropertyGroup)</code> <code>LoadVertexGroupsFromCSVOperator(bpy.types.Operator)</code> <code>SaveVertexGroupsToCSVOperator(bpy.types.Operator)</code> <code>SegmentationControls(bpy.types.Panel)</code></p>
+</section>
+<section id="gui-api" class="level2">
+<h2 class="anchored" data-anchor-id="gui-api">GUI API</h2>
+<p><code>TraitBlenderPanel(bpy.types.Panel)</code></p>
+</section>
+<section id="extra-tools" class="level2">
+<h2 class="anchored" data-anchor-id="extra-tools">Extra Tools</h2>
+<p><code>ExportSettingsOperator(bpy.types.Operator)</code> <code>DeleteAllObjectsOperator(bpy.types.Operator)</code></p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
