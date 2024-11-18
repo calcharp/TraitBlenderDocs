@@ -12,4 +12,4 @@ page-layout: full
   <h1>Welcome to TraitBlender</h1>
 </div>
 
-TraitBlender is an open-source pipeline for simulating image datasets of synthetic organisms from described morphospaces. It is implemented as an addon to [Blender](https://www.blender.org/about/), an open-source 3D modeling suite used for artistic and scientific purposes.
+TraitBlender is an open-source pipeline for simulating image datasets of synthetic organisms from theoretical morphospaces. It is implemented as an addon to [Blender](https://www.blender.org/about/), an open-source 3D modeling suite used for artistic and scientific purposes.
