@@ -5,5 +5,12 @@
     "title": "TraitBlender",
     "section": "",
     "text": "Welcome to TraitBlender\n\n\nTraitBlender is an open-source pipeline for simulating image datasets of synthetic organisms from theoretical morphospaces. It is implemented as an addon to Blender, an open-source 3D modeling suite used for artistic and scientific purposes."
+  },
+  {
+    "objectID": "Sections/getting-started.html",
+    "href": "Sections/getting-started.html",
+    "title": "Getting Started",
+    "section": "",
+    "text": "Getting Started\nTraitBlender is implemented as an addon to the 3D modeling software Blender, which can be installed here. Once Blender is installed, the TraitBlender addon can be installed via the zip file available in the Imageomics Repository.\nTo install TraitBlender via the Blender GUI, open Blender, and navigate to Edit -> Preferences..., located in the top left corner of the screen. Once in the Preferences menu, click Add-ons -> Install..., and find the TraitBlender.zip file you downloaded. Click Install Add-on, and navigate to the Testing tab in the Add-ons menu. Click the check box to the left of User Interface: TraitBlender. TraitBlender is now installed."
   }
 ]
