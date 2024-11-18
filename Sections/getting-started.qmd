@@ -6,7 +6,27 @@ page-layout: full
 
 # Getting Started 
 
-TraitBlender is implemented as an addon to the 3D modeling software Blender, which can be installed [here](https://www.blender.org/download/). Once Blender is installed, the TraitBlender addon can be installed via the zip file available in the [Imageomics Repository](https://github.com/Imageomics/TraitBlender). 
+TraitBlender is implemented as an addon to the 3D modeling software Blender, 
+which can be installed [here](https://www.blender.org/download/). Once Blender 
+is installed, the TraitBlender addon can be installed via the zip file available 
+in the [Imageomics Repository](https://github.com/Imageomics/TraitBlender). 
 
-To install TraitBlender via the Blender GUI, open Blender, and navigate to `Edit -> Preferences...`, located in the top left corner of the screen. Once in the Preferences menu, click `Add-ons -> Install...`, and find the TraitBlender.zip file you downloaded. Click `Install Add-on`, and navigate to the Testing tab in the Add-ons menu. Click the check box to the left of `User Interface: TraitBlender`. TraitBlender is now installed. 
+To install TraitBlender via the Blender GUI, open Blender, and navigate to 
+`Edit -> Preferences...`, located in the top left corner of the screen. Once 
+in the Preferences menu, click `Add-ons -> Install...`, and find the TraitBlender.zip 
+file you downloaded. Click `Install Add-on`, and navigate to the Testing tab in the 
+Add-ons menu. Click the check box to the left of `User Interface: TraitBlender`. 
+TraitBlender is now installed and enabled.
 
+To install TraitBlender via command line, you must create an intermediate Python file with this text:
+
+```{{python}}
+# import bpy
+# bpy.ops.preferences.addon_install(filepath="{absolute path to your zip file}}")
+```
+
+Then, in the terminal, run:
+
+```{{bash}}
+blender --background --python {your file name}.py
+```
