@@ -5,73 +5,16 @@ page-layout: full
 
 # Overview
 
-# Sections
-## Generating Organisms from Morphospaces
-`ImportMakeMeshFunctionPathOperator(bpy.types.Operator)`
-`ExecuteStoredFunctionOperator(bpy.types.Operator)`
-`OpenMeshFunctionFileBrowserOperator(bpy.types.Operator)`
+# Interfacing with the TraitBlender Package Interactively
 
-## Importing Trait Data
-`get_csv_labels(self, context)`
-`CSVLabelProperties(bpy.types.PropertyGroup)`
-`ExecuteWithSelectedCSVRowOperator(bpy.types.Operator)`
-`ImportCSVOperator(bpy.types.Operator)`
+In Blender versions <= 3.x, Add-ons such as TraitBlender could be imported directly to the Blender console or a script via 
 
-## World Color and Background Images
-`WorldBackgroundControls(bpy.types.PropertyGroup)`
-`ChangeWorldBackgroundColor(bpy.types.Operator)`
-`mesh_menu_func(self, context)`
-`update_background_plane_distance(self, context)`
-`BackgroundControls(bpy.types.PropertyGroup)`
-`CallUpdateBackgroundPlaneDistanceOperator(bpy.types.Operator)`
-`CreateBackgroundImageMeshOperator(bpy.types.Operator)`
-`HideBackgroundPlanesOperator(bpy.types.Operator)`
-`ImportBackgroundImageOperator(bpy.types.Operator)`
-`ScaleBackgroundPlanesOperator(bpy.types.Operator)`
-`ToggleBackgroundPlanesOperator(bpy.types.Operator)`
+```{{python}}
+import TraitBlender as tb
+```
 
-## Control Lighting via Suns
-`SunControls(bpy.types.PropertyGroup)`
-`HideSunsOperator(bpy.types.Operator)`
-`ToggleSunsOperator(bpy.types.Operator)`
-`UpdateSunStrengthOperator(bpy.types.Operator)`
-`SunControlsPanel(bpy.types.Panel)`
+As of Blender 4.2, the Add-on system has changed. To import TraitBlender directly, use 
 
-## Rendering Images
-`CameraControls(bpy.types.PropertyGroup)`
-`delete_cameras_on_mesh_deletion(dummy)`
-`update_camera_aspect_ratio(self, context)`
-`update_camera_distance(self, context)`
-`update_camera_focal_length(self, context)`
-`HideCamerasOperator(bpy.types.Operator)`
-`RenderAllCamerasOperator(bpy.types.Operator)`
-`SelectRenderDirectoryOperator(bpy.types.Operator)`
-`SetCameraViewOperator(bpy.types.Operator)`
-`ToggleCamerasOperator(bpy.types.Operator)`
-`RenderHiddenObjectsOperator(bpy.types.Operator)`
-`update_render_hidden_objects(self, context)`
-
-## Adding Random Noise to Scenes
-`RandomCamerasRotationOperator(bpy.types.Operator)`
-`RandomCamerasDistanceOperator(bpy.types.Operator)`
-`RandomWorldBackgroundColor(bpy.types.Operator)`
-`RandomSunsHideOperator(bpy.types.Operator)`
-`RandomSunStrengthOperator(bpy.types.Operator)`
-`RandomizationControls(bpy.types.PropertyGroup)`
-
-## Exporting 3D Objects
-`ExportControlsPropertyGroup(bpy.types.PropertyGroup)`
-`ExportActiveObjectOperator(bpy.types.Operator)`
-
-## Segmenting Models
-`SegmentationControlsProperty(bpy.types.PropertyGroup)`
-`LoadVertexGroupsFromCSVOperator(bpy.types.Operator)`
-`SaveVertexGroupsToCSVOperator(bpy.types.Operator)`
-`SegmentationControls(bpy.types.Panel)`
-
-## GUI API
-`TraitBlenderPanel(bpy.types.Panel)`
-
-## Extra Tools
-`ExportSettingsOperator(bpy.types.Operator)`
-`DeleteAllObjectsOperator(bpy.types.Operator)`
+```{{python}}
+import bl_ext.user_default.traitblender as tb
+```

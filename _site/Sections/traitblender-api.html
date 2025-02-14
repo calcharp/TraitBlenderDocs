@@ -20,6 +20,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -180,50 +243,18 @@ ul.task-list li input[type="checkbox"] {
 <section id="overview" class="level1">
 <h1>Overview</h1>
 </section>
-<section id="sections" class="level1">
-<h1>Sections</h1>
-<section id="generating-organisms-from-morphospaces" class="level2">
-<h2 class="anchored" data-anchor-id="generating-organisms-from-morphospaces">Generating Organisms from Morphospaces</h2>
-<p><code>ImportMakeMeshFunctionPathOperator(bpy.types.Operator)</code> <code>ExecuteStoredFunctionOperator(bpy.types.Operator)</code> <code>OpenMeshFunctionFileBrowserOperator(bpy.types.Operator)</code></p>
-</section>
-<section id="importing-trait-data" class="level2">
-<h2 class="anchored" data-anchor-id="importing-trait-data">Importing Trait Data</h2>
-<p><code>get_csv_labels(self, context)</code> <code>CSVLabelProperties(bpy.types.PropertyGroup)</code> <code>ExecuteWithSelectedCSVRowOperator(bpy.types.Operator)</code> <code>ImportCSVOperator(bpy.types.Operator)</code></p>
-</section>
-<section id="world-color-and-background-images" class="level2">
-<h2 class="anchored" data-anchor-id="world-color-and-background-images">World Color and Background Images</h2>
-<p><code>WorldBackgroundControls(bpy.types.PropertyGroup)</code> <code>ChangeWorldBackgroundColor(bpy.types.Operator)</code> <code>mesh_menu_func(self, context)</code> <code>update_background_plane_distance(self, context)</code> <code>BackgroundControls(bpy.types.PropertyGroup)</code> <code>CallUpdateBackgroundPlaneDistanceOperator(bpy.types.Operator)</code> <code>CreateBackgroundImageMeshOperator(bpy.types.Operator)</code> <code>HideBackgroundPlanesOperator(bpy.types.Operator)</code> <code>ImportBackgroundImageOperator(bpy.types.Operator)</code> <code>ScaleBackgroundPlanesOperator(bpy.types.Operator)</code> <code>ToggleBackgroundPlanesOperator(bpy.types.Operator)</code></p>
-</section>
-<section id="control-lighting-via-suns" class="level2">
-<h2 class="anchored" data-anchor-id="control-lighting-via-suns">Control Lighting via Suns</h2>
-<p><code>SunControls(bpy.types.PropertyGroup)</code> <code>HideSunsOperator(bpy.types.Operator)</code> <code>ToggleSunsOperator(bpy.types.Operator)</code> <code>UpdateSunStrengthOperator(bpy.types.Operator)</code> <code>SunControlsPanel(bpy.types.Panel)</code></p>
-</section>
-<section id="rendering-images" class="level2">
-<h2 class="anchored" data-anchor-id="rendering-images">Rendering Images</h2>
-<p><code>CameraControls(bpy.types.PropertyGroup)</code> <code>delete_cameras_on_mesh_deletion(dummy)</code> <code>update_camera_aspect_ratio(self, context)</code> <code>update_camera_distance(self, context)</code> <code>update_camera_focal_length(self, context)</code> <code>HideCamerasOperator(bpy.types.Operator)</code> <code>RenderAllCamerasOperator(bpy.types.Operator)</code> <code>SelectRenderDirectoryOperator(bpy.types.Operator)</code> <code>SetCameraViewOperator(bpy.types.Operator)</code> <code>ToggleCamerasOperator(bpy.types.Operator)</code> <code>RenderHiddenObjectsOperator(bpy.types.Operator)</code> <code>update_render_hidden_objects(self, context)</code></p>
-</section>
-<section id="adding-random-noise-to-scenes" class="level2">
-<h2 class="anchored" data-anchor-id="adding-random-noise-to-scenes">Adding Random Noise to Scenes</h2>
-<p><code>RandomCamerasRotationOperator(bpy.types.Operator)</code> <code>RandomCamerasDistanceOperator(bpy.types.Operator)</code> <code>RandomWorldBackgroundColor(bpy.types.Operator)</code> <code>RandomSunsHideOperator(bpy.types.Operator)</code> <code>RandomSunStrengthOperator(bpy.types.Operator)</code> <code>RandomizationControls(bpy.types.PropertyGroup)</code></p>
-</section>
-<section id="exporting-3d-objects" class="level2">
-<h2 class="anchored" data-anchor-id="exporting-3d-objects">Exporting 3D Objects</h2>
-<p><code>ExportControlsPropertyGroup(bpy.types.PropertyGroup)</code> <code>ExportActiveObjectOperator(bpy.types.Operator)</code></p>
-</section>
-<section id="segmenting-models" class="level2">
-<h2 class="anchored" data-anchor-id="segmenting-models">Segmenting Models</h2>
-<p><code>SegmentationControlsProperty(bpy.types.PropertyGroup)</code> <code>LoadVertexGroupsFromCSVOperator(bpy.types.Operator)</code> <code>SaveVertexGroupsToCSVOperator(bpy.types.Operator)</code> <code>SegmentationControls(bpy.types.Panel)</code></p>
-</section>
-<section id="gui-api" class="level2">
-<h2 class="anchored" data-anchor-id="gui-api">GUI API</h2>
-<p><code>TraitBlenderPanel(bpy.types.Panel)</code></p>
-</section>
-<section id="extra-tools" class="level2">
-<h2 class="anchored" data-anchor-id="extra-tools">Extra Tools</h2>
-<p><code>ExportSettingsOperator(bpy.types.Operator)</code> <code>DeleteAllObjectsOperator(bpy.types.Operator)</code></p>
+<section id="interfacing-with-the-traitblender-package-interactively" class="level1">
+<h1>Interfacing with the TraitBlender Package Interactively</h1>
+<p>In Blender versions &lt;= 3.x, Add-ons such as TraitBlender could be imported directly to the Blender console or a script via</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> TraitBlender <span class="im">as</span> tb</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>As of Blender 4.2, the Add-on system has changed. To import TraitBlender directly, use</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> bl_ext.user_default.traitblender <span class="im">as</span> tb</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

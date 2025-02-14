@@ -89,5 +89,12 @@
     "title": "TraitBlender GUI",
     "section": "",
     "text": "The opening screen for Blender\n\n\n\n\n\nThe Blender screen with the TraitBlender panel toggeled open\n\n\n\n\n\nA close up of the TraitBlender panel"
+  },
+  {
+    "objectID": "Sections/traitblender-api.html",
+    "href": "Sections/traitblender-api.html",
+    "title": "Python API",
+    "section": "",
+    "text": "Overview\n\n\nInterfacing with the TraitBlender Package Interactively\nIn Blender versions <= 3.x, Add-ons such as TraitBlender could be imported directly to the Blender console or a script via\n```{python}\nimport TraitBlender as tb\n```\nAs of Blender 4.2, the Add-on system has changed. To import TraitBlender directly, use\n```{python}\nimport bl_ext.user_default.traitblender as tb\n```"
   }
 ]
